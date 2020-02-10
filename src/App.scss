@@ -1,0 +1,91 @@
+.App {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hr-line-color {
+    border-top: 3px solid #58D99B;
+    margin-top: 10px;
+}
+
+nav {
+    .left {
+        float: left;
+        width: 89%;
+        text-align: right;
+    }
+    
+    .right {
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+
+    ul {
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-decoration: none;
+        padding-left: 0;
+    }
+
+    li {
+        padding-bottom: 0px;
+        padding-right: 30px;
+        list-style-type: none;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
+
+.m-0 {
+    margin: 0px;
+}
+
+.btn-shake {
+    background-color: #58D99B;
+    padding: 7px 0px 7px 0px;
+    color: #fff;
+    width: 20%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 5px;
+    &:hover {
+        background: #2dad6f;
+    }
+    &:focus {
+        outline:0;
+    }
+}
+
+.btn-restart {
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    background-color: #fff;
+    padding-top: 8px;
+    outline: 0;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 550px;
+    height: 550px;
+}
+
+.apple {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+  
+.basket {
+    .apples {
+      position: relative;
+      float: right;
+      width: 160px;
+    }
+}
