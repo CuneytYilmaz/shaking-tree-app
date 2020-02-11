@@ -1,3 +1,6 @@
+# Uygulama www.shaking-tree-app.surge.sh üzerinde koşuyor.
+# Package.json içerisinde yer alan yarn deploy komutu ile statik uygulamaların koşmasını sağlayan surge.sh üzerinde belirtilen sub domaine uygulama deploy ediliyor.
+
 echo 'Building application...'
 yarn build
 

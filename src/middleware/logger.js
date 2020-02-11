@@ -1,3 +1,5 @@
+// Uygulama içerisindeki her state değişimi için log mekanizması kuruldu. Bu sayede development sırasında state'in hangi action ile değiştiği ve yeni state'in ne olduğu bilgisi rahatça console'dan takip edilebiliyor.
+
 const logger = (store) => (next) => (action) => {
     console.group(action.type)
         console.log('The action: ', action)

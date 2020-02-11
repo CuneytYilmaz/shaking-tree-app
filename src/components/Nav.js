@@ -6,6 +6,8 @@ class Nav extends Component {
     handleRestart = () => {
         const { dispatch, applesCount, onBasketCount } = this.props
 
+        // Ağaç sallanırken Restart butonuna basıldığında animasyonun durmaması için aşağıdaki if statement'ı eklendi.
+        // Sadece tüm elmalar sepette olduğu zaman Restart butonu ile elmaların ilk pozisyonlarının alması sağlandı.
         if ( applesCount === onBasketCount) {
             dispatch(setAppleReset())
         } 
@@ -30,6 +32,7 @@ class Nav extends Component {
 } 
 
 function mapStateToProps ({ apples }) {
+    // Store'dan tüm elmaların sayısı ile sepetteki elmaların sayısı props olarak alınıp component'e geçirildi.
 	return {
         applesCount: Object.keys(apples).length,
         onBasketCount: Object.values(apples).filter(apple => apple.onBasket).length,

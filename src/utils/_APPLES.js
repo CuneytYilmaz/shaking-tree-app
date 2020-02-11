@@ -1,3 +1,5 @@
+// Uygulama içerisinde kullanılan tüm elma dataları aşağıdaki şekilde yer alıyor. Bu data aynı zamanda initial state'imizi de oluşturuyor.
+
 export let _apples = {
     0: {
         overflow: 'hidden',    
