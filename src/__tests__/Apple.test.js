@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from '../components/App';
+import Apple from '../components/Apple';
 
 it('renders correctly', () => {
-  const wrapper = shallow(<App />);
+  const wrapper = shallow(<Apple />);
 
   expect(wrapper).toMatchSnapshot();
 });
